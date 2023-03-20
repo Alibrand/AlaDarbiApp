@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/secondary_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccountActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="تعديل معلومات الحساب"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:background="@color/secondary_color"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txt_first_name"
+                android:textColorHint="#373535"
+                android:drawablePadding="5dp"
+                android:hint="الاسم الأول"
+                android:drawableRight="@drawable/acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txt_last_name"
+                android:textColorHint="#373535"
+                android:drawablePadding="5dp"
+                android:hint="الاسم الأخير"
+                android:drawableRight="@drawable/acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txt_phone"
+                android:textDirection="rtl"
+                android:gravity="right"
+                android:inputType="phone"
+                android:textColorHint="#373535"
+                android:drawablePadding="5dp"
+                android:hint="الهاتف"
+                android:drawableRight="@drawable/ic_baseline_call_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_save"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_back"
+                android:text="حفظ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

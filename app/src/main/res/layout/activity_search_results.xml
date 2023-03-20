@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/secondary_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultsActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="الرحلات المتوفرة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:text="الرحلات الأقرب الى نقطتي الانطلاق والوصول"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:background="@color/secondary_color"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recycler_trips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

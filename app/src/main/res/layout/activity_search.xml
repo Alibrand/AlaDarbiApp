@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/secondary_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClientHomeActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="البحث عن رحلات"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<ScrollView
+    android:background="@color/secondary_color"
+    android:gravity="center"
+    android:layout_weight="0.8"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/secondary_color"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="حدد نقطة الانطلاق والوصول على الخريطةواختر التاريخ ثم اضغط على بحث"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:id="@+id/btn_set_start"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/main_color"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/item_border"
+            android:text="حدد نقطة الانطلاق"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_set_finish"
+            android:drawablePadding="10dp"
+
+            android:textSize="20sp"
+            android:textColor="@color/main_color"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/item_border"
+            android:text="حدد نقطة الوصول"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="التاريخ  :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <DatePicker
+                android:id="@+id/dp_trip_date"
+                android:spinnersShown="true"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_search"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"
+            android:text="بحث"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

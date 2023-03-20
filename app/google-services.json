@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "89989078228",
+    "project_id": "aladarbi-6b98d",
+    "storage_bucket": "aladarbi-6b98d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89989078228:android:c62fd85527871c47976f41",
+        "android_client_info": {
+          "package_name": "com.ksacp2022t3.aladarbi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "89989078228-c4ki2tg1vk86dn7ej1cqmrulb4n3kv2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBesURU149za5RmY2hV718Pwmbm74utMfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "89989078228-c4ki2tg1vk86dn7ej1cqmrulb4n3kv2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

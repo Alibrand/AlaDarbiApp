@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/secondary_color"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTripActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:gravity="center_vertical"
+        android:background="@color/main_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="إضافة رحلة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:background="@color/secondary_color"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="نوع السيارة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txt_car_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="رقم السيارة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/txt_car_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="سعة الركاب :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:inputType="number"
+                android:id="@+id/txt_passengers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center_vertical"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="توقيت الرحلة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           <RadioGroup
+               android:id="@+id/group_type"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:checked="true"
+                   android:id="@+id/rd_daily"
+                   android:text="يومياً"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <RadioButton
+                   android:id="@+id/rd_once"
+                   android:text="مرة واحدة"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+           </RadioGroup>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layout_date"
+            android:visibility="gone"
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="تاريخ الرحلة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <DatePicker
+                android:id="@+id/dp_trip_date"
+                android:spinnersShown="true"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="ساعة الانطلاق :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TimePicker
+                android:id="@+id/tp_start_time"
+                android:timePickerMode="spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/btn_select_path"
+             android:background="@drawable/button_back"
+             android:text="حدد مسار الرحلة"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="مسافة الرحلة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:inputType="number"
+                android:id="@+id/txt_total_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="كلفة الرحلة :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:inputType="number"
+                android:id="@+id/txt_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:background="@drawable/button_back"
+            android:text="حفظ"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
